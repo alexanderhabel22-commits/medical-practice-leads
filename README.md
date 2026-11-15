@@ -41,10 +41,6 @@ Dental practices, orthodontists, oral surgeons, primary care, pediatrics, urgent
 - Optional filters: **only newly registered** organizations (NPI issued in the last N days), **only certain cities**, only with a phone, only with a website.
 - **Maximum results**.
 
-## Pricing
-
-You pay per practice location returned, plus a small fee per run. Set a maximum results number or a spending limit and the run stops there.
-
 ## Data and privacy
 
 Only organization records from a public government registry, plus public OpenStreetMap data. Individual practitioners (type 1 NPIs) are never requested, and the registry's "authorized official" contact person is never copied. Emails are limited to role mailboxes such as info@ or office@. Nothing behind a login.
@@ -54,3 +50,41 @@ Only organization records from a public government registry, plus public OpenStr
 - Run it monthly with **Only newly registered (days)** set to 31 to get a fresh list of new practices every month.
 - For the fullest list in a category, turn off **Primary specialty must match**.
 - Websites come from OpenStreetMap and cover a minority of practices, so **Only with a website** shrinks the list a lot.
+
+## How much does it cost?
+
+**$4 per 1,000 practice locations** ($0.004 each), plus $0.005 per run. You pay only for practice locations returned.
+
+| You get | You pay |
+|---|---|
+| 100 practice locations | about $0.41 |
+| 1,000 practice locations | about $4.01 |
+| 5,000 practice locations | about $20.01 |
+
+Apify's free plan includes $5 of credit every month, which covers about 1,200 practice locations, so you can try it without paying anything. Set **Maximum results** or a spending limit and the run stops there.
+
+## FAQ
+
+**Is this an NPI Registry scraper?** Yes. It searches the official CMS NPI Registry (NPPES) for organizations, splits big searches so nothing is cut off at the registry's 1,200-row limit, and merges NPIs at the same address into one practice.
+
+**Can I get a list of every dental office in my state?** Yes. Pick Dental practices and your state. Ohio returns about 2,200 practice locations with phone numbers in under a minute.
+
+**Can I find newly opened practices?** Yes. Set Only newly registered (days) to 30 and run it monthly to catch new practices while they are still choosing vendors.
+
+**Does it include doctors' names or personal emails?** No. Only organizations are returned. Individual practitioners and the registry's contact person are left out.
+
+**Can I export healthcare leads to Excel or my CRM?** Download as CSV, Excel or JSON, or send results to Google Sheets, HubSpot, Zapier or Make with Apify integrations.
+
+## Use it from your own tools
+
+Run it from the Apify API (see the API tab), on a schedule, or from Zapier, Make, n8n, Google Sheets and Slack integrations. Each run's results stay in a dataset you can download as CSV, Excel, JSON or XML.
+
+## More B2B lead lists from the same developer
+
+Same pricing, same clean one-row-per-company format:
+
+- [US Manufacturer & Machine Shop Leads](https://apify.com/habes22/fabricator-finder): metal fabricators and machine shops by capability (laser, CNC, welding)
+- [Construction Contractor & Subcontractor Finder](https://apify.com/habes22/construction-contractor-finder): commercial contractors and subs by trade
+- [Trucking Company & Carrier Leads (FMCSA)](https://apify.com/habes22/trucking-carrier-finder): trucking companies by cargo, fleet size and area, with safety data
+- [Government Bids & RFPs (SAM.gov + State)](https://apify.com/habes22/gov-bids-finder): open federal, state and local bids for what you sell
+- [Commercial Property Owner Leads](https://apify.com/habes22/commercial-property-owner-leads): who owns offices, warehouses and other commercial buildings
