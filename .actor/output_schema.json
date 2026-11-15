@@ -1,0 +1,18 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "Medical Practice Leads output",
+    "properties": {
+        "organizations": {
+            "type": "string",
+            "title": "Practice locations",
+            "description": "The deduplicated list of healthcare organization locations found.",
+            "template": "{{links.apiDefaultDatasetUrl}}/items"
+        },
+        "summary": {
+            "type": "string",
+            "title": "Run summary",
+            "description": "Counts per source, filters and how many locations were kept.",
+            "template": "{{links.apiDefaultKeyValueStoreUrl}}/records/RUN_SUMMARY"
+        }
+    }
+}

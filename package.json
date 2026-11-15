@@ -1,0 +1,17 @@
+{
+  "name": "medical-practice-leads",
+  "version": "0.1.0",
+  "description": "US medical practice, clinic and healthcare company leads by specialty from the NPI Registry, organizations only.",
+  "type": "module",
+  "main": "src/main.js",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "apify": "^3.7.2"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}

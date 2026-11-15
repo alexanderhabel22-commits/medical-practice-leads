@@ -1,0 +1,146 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Practice locations",
+            "transformation": {
+                "fields": [
+                    "practice_name",
+                    "primary_specialty",
+                    "phone",
+                    "fax",
+                    "website",
+                    "street",
+                    "city",
+                    "state",
+                    "zip",
+                    "npi",
+                    "registered_on",
+                    "same_name_locations",
+                    "distance_miles"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "practice_name": {
+                        "label": "Practice",
+                        "format": "text"
+                    },
+                    "primary_specialty": {
+                        "label": "Main specialty",
+                        "format": "text"
+                    },
+                    "phone": {
+                        "label": "Phone",
+                        "format": "text"
+                    },
+                    "fax": {
+                        "label": "Fax",
+                        "format": "text"
+                    },
+                    "website": {
+                        "label": "Website",
+                        "format": "link"
+                    },
+                    "street": {
+                        "label": "Street",
+                        "format": "text"
+                    },
+                    "city": {
+                        "label": "City",
+                        "format": "text"
+                    },
+                    "state": {
+                        "label": "State",
+                        "format": "text"
+                    },
+                    "zip": {
+                        "label": "ZIP",
+                        "format": "text"
+                    },
+                    "npi": {
+                        "label": "NPI",
+                        "format": "text"
+                    },
+                    "registered_on": {
+                        "label": "NPI since",
+                        "format": "text"
+                    },
+                    "same_name_locations": {
+                        "label": "Locations (same name)",
+                        "format": "number"
+                    },
+                    "distance_miles": {
+                        "label": "Miles away",
+                        "format": "number"
+                    }
+                }
+            }
+        },
+        "contact": {
+            "title": "Contact list",
+            "transformation": {
+                "fields": [
+                    "practice_name",
+                    "phone",
+                    "fax",
+                    "website",
+                    "email",
+                    "street",
+                    "city",
+                    "state",
+                    "zip"
+                ]
+            },
+            "display": {
+                "component": "table"
+            }
+        },
+        "full": {
+            "title": "Full details",
+            "transformation": {
+                "fields": [
+                    "practice_name",
+                    "legal_name",
+                    "other_names",
+                    "matched_categories",
+                    "primary_specialty",
+                    "specialties",
+                    "organization_kind",
+                    "phone",
+                    "fax",
+                    "website",
+                    "email",
+                    "street",
+                    "city",
+                    "state",
+                    "zip",
+                    "latitude",
+                    "longitude",
+                    "location_precision",
+                    "distance_miles",
+                    "npi",
+                    "all_npis",
+                    "npi_count",
+                    "registered_on",
+                    "years_registered",
+                    "npi_last_updated",
+                    "same_name_locations",
+                    "other_location_count",
+                    "is_subpart",
+                    "parent_organization",
+                    "opening_hours",
+                    "ehr_endpoints",
+                    "npi_registry_url",
+                    "sources",
+                    "scraped_at"
+                ]
+            },
+            "display": {
+                "component": "table"
+            }
+        }
+    }
+}
