@@ -14,12 +14,17 @@ The data comes from the official **CMS NPI Registry (NPPES)**, the national list
 
 ## What you get
 
-| practice_name | primary_specialty | phone | fax | city | state | npi | registered_on | same_name_locations |
-|---|---|---|---|---|---|---|---|---|
-| High Street Smiles | Dentist, General Practice | (614) 555-0100 | (614) 555-0101 | Columbus | OH | 1700000001 | 2011-10-31 | 1 |
-| Example Urgent Care LLC | Clinic/Center, Urgent Care | (216) 555-0142 | (216) 555-0143 | Cleveland | OH | 1700000002 | 2025-06-02 | 4 |
+The input form comes pre-filled with **dental practices, Ohio, 100 results**. Click Start and you get this kind of list in about 30 seconds, for about $0.41. These rows are from a test run on November 23, 2026:
 
-*(Illustrative rows.)* Each row also has: legal name and other business names (DBA), every specialty the organization lists, single- or multi-specialty group, street address, ZIP, map coordinates, distance from your ZIP, **all NPIs at that location**, years registered, last update date, **how many locations share the same name** (to tell chains and DSOs from independents), whether it is a department of a larger organization and its parent name, health IT endpoints (FHIR / Direct messaging hosts, which often reveal the EHR vendor), and a link to the official registry page. Where the location is on OpenStreetMap, you also get its **website**, a role email (info@, office@), opening hours and the exact building position.
+| Practice | Specialty | Phone | Fax | City | State | NPI |
+|---|---|---|---|---|---|---|
+| Comfort Dental Sawmill | Dentist, General Practice | (740) 386-6600 | (740) 386-6602 | Dublin | OH | 1942589981 |
+| Dayton Dental Solutions | Dentist, General Practice | (937) 439-0275 | (937) 439-0276 | Dayton | OH | 1316288103 |
+| Hutta Family Orthodontics | Dentist, Orthodontics and Dentofacial Orthopedics | (614) 423-8177 | (614) 423-8175 | Westerville | OH | 1043601891 |
+| Hayden Run Dentistry | Dentist, General Practice | (614) 534-0688 | (614) 534-0699 | Dublin | OH | 1548568124 |
+| Richwood Family Dental | Dentist | (740) 943-2111 | (740) 943-1353 | Richwood | OH | 1871691196 |
+
+Each row also has: legal name and other business names (DBA), every specialty the organization lists, single- or multi-specialty group, street address, ZIP, map coordinates, distance from your ZIP, **all NPIs at that location**, years registered, last update date, **how many locations share the same name** (to tell chains and DSOs from independents), whether it is a department of a larger organization and its parent name, health IT endpoints (FHIR / Direct messaging hosts, which often reveal the EHR vendor), and a link to the official registry page. Where the location is on OpenStreetMap, you also get its **website**, a role email (info@, office@), opening hours and the exact building position.
 
 Typical results: dental practices in Ohio about 2,200 locations in under a minute; behavioral health clinics in Texas about 11,500; urgent care and primary care within 25 miles of Cleveland about 500; surgery centers and dialysis centers in the whole US about 21,800. Almost every row has a phone number and about two thirds have a fax number.
 
@@ -88,3 +93,4 @@ Same pricing, same clean one-row-per-company format:
 - [Trucking Company & Carrier Leads (FMCSA)](https://apify.com/habes22/trucking-carrier-finder): trucking companies by cargo, fleet size and area, with safety data
 - [Government Bids & RFPs (SAM.gov + State)](https://apify.com/habes22/gov-bids-finder): open federal, state and local bids for what you sell
 - [Commercial Property Owner Leads](https://apify.com/habes22/commercial-property-owner-leads): who owns offices, warehouses and other commercial buildings
+- [Solar & Battery Installer Leads](https://apify.com/habes22/solar-installer-leads): US solar installers ranked by how many systems they really installed
